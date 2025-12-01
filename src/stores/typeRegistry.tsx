@@ -88,7 +88,7 @@ export const TypeRegistryProvider = TypeRegistryStoreContext.Provider
  * @returns the store call.
  */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const useTypeRegistryStore = <U>(selector: (state: TypeRegistryState) => U, equalityFn?: (a: U, b: U) => boolean) => {
+export const useTypeRegistryStore = <U,>(selector: (state: TypeRegistryState) => U, equalityFn?: (a: U, b: U) => boolean) => {
   const store = useContext(TypeRegistryStoreContext)
   return useStore(store, selector)
 }
