@@ -81,9 +81,15 @@ export const TypeRegistryStoreContext = createContext<StoreApi<TypeRegistryState
 
 export const TypeRegistryProvider = TypeRegistryStoreContext.Provider
 
+/**
+ * 
+ * @param selector the selector
+ * @param equalityFn parameter is ignored, deprecated and due to removal. 
+ * @returns the store call.
+ */
 export const useTypeRegistryStore = <U extends unknown>(selector: (state: TypeRegistryState) => U, equalityFn?: (a: U, b: U) => boolean) => {
   const store = useContext(TypeRegistryStoreContext)
-  return useStore(store, selector, equalityFn)
+  return useStore(store, selector)
 }
 
 function matchTypeComponents<Value> (

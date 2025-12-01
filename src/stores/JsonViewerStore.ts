@@ -126,7 +126,13 @@ export const JsonViewerStoreContext = createContext<StoreApi<JsonViewerState>>(u
 
 export const JsonViewerProvider = JsonViewerStoreContext.Provider
 
+/**
+ * 
+ * @param selector the selector
+ * @param equalityFn parameter is ignored, @deprecated and will be removed in an upcoming version.
+ * @returns the store call
+ */
 export const useJsonViewerStore = <U extends unknown>(selector: (state: JsonViewerState) => U, equalityFn?: (a: U, b: U) => boolean) => {
   const store = useContext(JsonViewerStoreContext)
-  return useStore(store, selector, equalityFn)
+  return useStore(store, selector)
 }

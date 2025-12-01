@@ -3,5 +3,7 @@ packages:
   - docs
 
 onlyBuiltDependencies:
-  - unrs-resolver
+  - '@swc/core'
+  - esbuild
   - sharp
+  - unrs-resolver
