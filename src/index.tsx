@@ -169,7 +169,6 @@ export const JsonViewer = function JsonViewer<Value> (props: JsonViewerProps<Val
   }, [themeType])
   const mixedProps = { ...props, theme: themeType }
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const jsonViewerStore = useMemo(() => createJsonViewerStore(props), [])
   const typeRegistryStore = useMemo(() => createTypeRegistryStore(), [])
 

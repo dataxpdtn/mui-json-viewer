@@ -9,6 +9,7 @@ import { useJsonViewerStore } from '../../stores/JsonViewerStore'
 import type { DataItemProps, DataType } from '../../type'
 import { DataTypeLabel } from '../DataTypeLabel'
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
 const functionBody = (func: Function) => {
   const funcString = func.toString()
 
@@ -28,6 +29,7 @@ const functionBody = (func: Function) => {
   return funcString.substring(funcString.indexOf('=>') + 2)
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
 const functionName = (func: Function) => {
   const funcString = func.toString()
   const isUsualFunction = funcString.indexOf('function') !== -1
@@ -41,6 +43,7 @@ const functionName = (func: Function) => {
 const lb = '{'
 const rb = '}'
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
 const PreFunctionType: FC<DataItemProps<Function>> = (props) => {
   return (
     <NoSsr>
@@ -59,6 +62,7 @@ const PreFunctionType: FC<DataItemProps<Function>> = (props) => {
   )
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
 const PostFunctionType: FC<DataItemProps<Function>> = () => {
   return (
     <NoSsr>
@@ -69,6 +73,7 @@ const PostFunctionType: FC<DataItemProps<Function>> = () => {
   )
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
 const FunctionType: FC<DataItemProps<Function>> = (props) => {
   const functionColor = useJsonViewerStore(store => store.colorspace.base05)
   return (
@@ -101,6 +106,7 @@ const FunctionType: FC<DataItemProps<Function>> = (props) => {
   )
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
 export const functionType: DataType<Function> = {
   is: (value) => typeof value === 'function',
   Component: FunctionType,

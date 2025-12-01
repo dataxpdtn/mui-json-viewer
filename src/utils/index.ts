@@ -5,7 +5,7 @@ import type { DataItemProps, DataType, EditorProps, Path } from '../type'
 
 // reference: https://github.com/immerjs/immer/blob/main/src/utils/common.ts
 const objectCtorString = Object.prototype.constructor.toString()
-export function isPlainObject (value: any): boolean {
+export function isPlainObject (value: unknown): boolean {
   if (!value || typeof value !== 'object') return false
 
   const proto = Object.getPrototypeOf(value)
@@ -17,7 +17,7 @@ export function isPlainObject (value: any): boolean {
   return typeof Ctor === 'function' && Function.toString.call(Ctor) === objectCtorString
 }
 
-function shouldShallowCopy (value: any) {
+function shouldShallowCopy (value: unknown) {
   if (!value) return false
 
   return (
@@ -28,7 +28,7 @@ function shouldShallowCopy (value: any) {
   )
 }
 
-function shallowCopy (value: any) {
+function shallowCopy (value: unknown) {
   if (Array.isArray(value)) return Array.prototype.slice.call(value)
   if (value instanceof Set) return new Set(value)
   if (value instanceof Map) return new Map(value)
@@ -209,7 +209,7 @@ export const isCycleReference = (
   return false
 }
 
-export function getValueSize (value: any): number {
+export function getValueSize (value: unknown): number {
   if (value === null || undefined) {
     return 0
   } else if (Array.isArray(value)) {
@@ -330,7 +330,8 @@ export interface PathValueCustomGetter {
   handler: (value: unknown, key: unknown) => unknown
 }
 
-export function pathValueDefaultGetter (value: any, key: any): unknown {
+ 
+export function pathValueDefaultGetter (value: any, key: any): any {
   if (value === null || value === undefined) {
     return null
   }
@@ -363,7 +364,7 @@ export function getPathValue<T = unknown, R = unknown> (
   customGetters: PathValueCustomGetter[] = []
 ): R | null {
   try {
-    // @ts-ignore
+    // @ts-expect-error TS2769
     return path.reduce((acc, key, index) => {
       if (acc === null || acc === undefined) {
         console.error('Invalid path or value encountered at path', path.slice(0, index))

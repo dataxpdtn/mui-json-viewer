@@ -132,7 +132,8 @@ export const JsonViewerProvider = JsonViewerStoreContext.Provider
  * @param equalityFn parameter is ignored, @deprecated and will be removed in an upcoming version.
  * @returns the store call
  */
-export const useJsonViewerStore = <U extends unknown>(selector: (state: JsonViewerState) => U, equalityFn?: (a: U, b: U) => boolean) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const useJsonViewerStore = <U>(selector: (state: JsonViewerState) => U, equalityFn?: (a: U, b: U) => boolean) => {
   const store = useContext(JsonViewerStoreContext)
   return useStore(store, selector)
 }

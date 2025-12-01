@@ -393,7 +393,6 @@ describe('function getPathValue', () => {
     const map = new WeakMap()
     const key = {}
     map.set(key, 1)
-    // @ts-ignore
     expect(getPathValue(map, [key])).to.eq(1)
   })
 

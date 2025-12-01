@@ -371,7 +371,6 @@ describe('test functions', () => {
   `
     ],
     [
-      // eslint-disable-next-line unused-imports/no-unused-vars
       (...args: any) => console.log('555'),
       '(...args) => {',
       ' console.log("555")'
@@ -388,7 +387,6 @@ describe('test functions', () => {
       }`
     ],
     [
-      // eslint-disable-next-line unused-imports/no-unused-vars
       function (a: number, b: number) {
         throw Error('Be careful to use the function just as value in useState() hook')
       },
@@ -422,7 +420,6 @@ describe('test functions', () => {
         }`
     ],
     [
-      // @ts-ignore
       function (e, n) { return e + n },
       '(e, n) {',
       `

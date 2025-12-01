@@ -87,7 +87,8 @@ export const TypeRegistryProvider = TypeRegistryStoreContext.Provider
  * @param equalityFn parameter is ignored, deprecated and due to removal. 
  * @returns the store call.
  */
-export const useTypeRegistryStore = <U extends unknown>(selector: (state: TypeRegistryState) => U, equalityFn?: (a: U, b: U) => boolean) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const useTypeRegistryStore = <U>(selector: (state: TypeRegistryState) => U, equalityFn?: (a: U, b: U) => boolean) => {
   const store = useContext(TypeRegistryStoreContext)
   return useStore(store, selector)
 }
