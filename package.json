@@ -55,8 +55,8 @@
     "prepack": "pinst --disable",
     "prepare": "",
     "postpack": "pinst --enable",
-    "lint": "npx eslint . --ext .ts,.tsx,.js,.jsx --cache --fix",
-    "lint:ci": "npx eslint . --ext .ts,.tsx,.js,.jsx --cache --max-warnings 0",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx --cache --fix",
+    "lint:ci": "eslint . --ext .ts,.tsx,.js,.jsx --cache --max-warnings 0",
     "build": "tsc && rollup -c rollup.config.ts --configPlugin swc3"
   },
   "dependencies": {
@@ -78,9 +78,9 @@
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
-    "@emotion/react": "^11.13.5",
-    "@emotion/styled": "^11.13.5",
-    "@mui/material": "^6.1.10",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.5",
     "@rollup/plugin-alias": "^5.1.1",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.3.0",

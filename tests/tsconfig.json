@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "paths": {
-      "@textea/json-viewer": ["../src/index"]
+      "@helt/mui-json-viewer": ["../src/index"]
     },
     "jsx": "preserve",
     "incremental": true,

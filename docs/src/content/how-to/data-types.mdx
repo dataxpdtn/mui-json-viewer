@@ -64,7 +64,7 @@ If you want to preview images directly in your JSON, you can define a data type 
   <Tabs.Tab>
 
 ```jsx
-import { defineDataType } from '@textea/json-viewer'
+import { defineDataType } from '@helt/mui-json-viewer'
 
 const imageType = defineDataType({
   is: (value) => {
@@ -94,7 +94,7 @@ const imageType = defineDataType({
 
   <Tabs.Tab>
 ```tsx
-import { defineDataType } from '@textea/json-viewer'
+import { defineDataType } from '@helt/mui-json-viewer'
 
 const imageType = defineDataType<string>({
   is: (value) => {
@@ -144,7 +144,7 @@ Let's add support for the [`URL`](https://developer.mozilla.org/en-US/docs/Web/A
 <Tabs items={['JS', 'TS']}>
   <Tabs.Tab>
 ```jsx
-import { defineDataType } from '@textea/json-viewer'
+import { defineDataType } from '@helt/mui-json-viewer'
 
 const urlType = defineDataType({
   is: (value) => value instanceof URL,
@@ -171,7 +171,7 @@ const urlType = defineDataType({
 
   <Tabs.Tab>
 ```tsx
-import { defineDataType } from '@textea/json-viewer'
+import { defineDataType } from '@helt/mui-json-viewer'
 
 const urlType = defineDataType<URL>({
   is: (value) => value instanceof URL,
@@ -225,7 +225,7 @@ In this example, we will **extend the built-in `stringType`** and add a button t
 <Tabs items={['JS', 'TS']}>
   <Tabs.Tab>
 ```jsx
-import { defineDataType, JsonViewer, stringType } from '@textea/json-viewer'
+import { defineDataType, JsonViewer, stringType } from '@helt/mui-json-viewer'
 import { Button } from '@mui/material'
 
 const linkType = defineDataType({
@@ -255,7 +255,7 @@ const linkType = defineDataType({
 
   <Tabs.Tab>
 ```tsx
-import { defineDataType, JsonViewer, stringType } from '@textea/json-viewer'
+import { defineDataType, JsonViewer, stringType } from '@helt/mui-json-viewer'
 import { Button } from '@mui/material'
 
 const linkType = defineDataType<string>({
@@ -291,7 +291,7 @@ By default, `Date` values are displayed using the `toLocaleString` method. You w
 <Tabs items={['JS', 'TS']}>
   <Tabs.Tab>
 ```jsx
-import { defineEasyType } from '@textea/json-viewer'
+import { defineEasyType } from '@helt/mui-json-viewer'
 
 const myDateType = defineEasyType({
   is: (value) => value instanceof Date,
@@ -304,7 +304,7 @@ const myDateType = defineEasyType({
 
   <Tabs.Tab>
 ```tsx
-import { defineEasyType } from '@textea/json-viewer'
+import { defineEasyType } from '@helt/mui-json-viewer'
 
 const myDateType = defineEasyType<Date>({
   is: (value) => value instanceof Date,
