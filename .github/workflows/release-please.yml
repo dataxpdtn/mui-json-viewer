@@ -51,6 +51,6 @@ jobs:
           pnpm pkg delete lint-staged
 
       - name: Publish to npm
-        run: pnpm publish --provenance --access public
+        run: pnpm publish --provenance --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
