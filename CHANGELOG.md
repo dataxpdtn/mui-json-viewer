@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.0.3](https://github.com/helt/mui-json-viewer/compare/mui-json-viewer-v5.0.2...mui-json-viewer-v5.0.3) (2025-12-01)
+
+
+### Bug Fixes
+
+* use pnpm for publish step ([6cabb10](https://github.com/helt/mui-json-viewer/commit/6cabb105366af27d2f1bd6583bc7b27a01a1f4a5))
+
 ## [5.0.2](https://github.com/helt/mui-json-viewer/compare/mui-json-viewer-v5.0.1...mui-json-viewer-v5.0.2) (2025-12-01)
 
 
