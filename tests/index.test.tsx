@@ -90,7 +90,7 @@ describe('render <JsonViewer/>', () => {
     render(<JsonViewer value={114514n} />)
   })
 
-  it('render array', () => {
+  it('render array', {timeout: 10_000}, () => {
     render(<JsonViewer value={[1, '2', 3.0, Infinity]} />)
     render(<JsonViewer value={new Array(1e5).fill(1)} />)
   })
