@@ -364,7 +364,6 @@ export function getPathValue<T = unknown, R = unknown> (
   customGetters: PathValueCustomGetter[] = []
 ): R | null {
   try {
-    // @ts-expect-error TS2769
     return path.reduce((acc, key, index) => {
       if (acc === null || acc === undefined) {
         console.error('Invalid path or value encountered at path', path.slice(0, index))
