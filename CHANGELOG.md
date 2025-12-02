@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.0.8](https://github.com/dataxpdtn/mui-json-viewer/compare/mui-json-viewer-v5.0.7...mui-json-viewer-v5.0.8) (2025-12-02)
+
+
+### Bug Fixes
+
+* fix docs ([7db6311](https://github.com/dataxpdtn/mui-json-viewer/commit/7db6311333832f72f65053586cf572e500da23d4))
+
 ## [5.0.7](https://github.com/dataxpdtn/mui-json-viewer/compare/mui-json-viewer-v5.0.6...mui-json-viewer-v5.0.7) (2025-12-02)
 
 
