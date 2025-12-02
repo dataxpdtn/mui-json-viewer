@@ -2,8 +2,8 @@
 
 [![npm](https://img.shields.io/npm/v/@dataxpdtn/mui-json-viewer)](https://www.npmjs.com/package/@dataxpdtn/mui-json-viewer)
 [![npm](https://img.shields.io/npm/dm/@dataxpdtn/mui-json-viewer.svg)](https://www.npmjs.com/package/@dataxpdtn/mui-json-viewer)
-[![npm](https://img.shields.io/npm/l/@dataxpdtn/mui-json-viewer)](https://github.com/helt/mui-json-viewer/blob/main/LICENSE)
-[![codecov](https://codecov.io/gh/helt/mui-json-viewer/branch/main/graph/badge.svg?token=r32mzVhrRl)](https://codecov.io/gh/helt/mui-json-viewer)
+[![npm](https://img.shields.io/npm/l/@dataxpdtn/mui-json-viewer)](https://github.com/dataxpdtn/mui-json-viewer/blob/main/LICENSE)
+[![codecov](https://codecov.io/gh/dataxpdtn/mui-json-viewer/branch/main/graph/badge.svg?token=r32mzVhrRl)](https://codecov.io/gh/dataxpdtn/mui-json-viewer)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c2aa0ee1-979b-4512-85d2-f27e63897df0/deploy-status)](https://viewer.textea.io)
 
 `@dataxpdtn/mui-json-viewer` is a React component that can be used to view and display any kind of data, not just JSON.
@@ -97,7 +97,7 @@ Please refer to [Styling and Theming](https://viewer.textea.io/how-to/styling)
 
 ## Contributors
 
-<a href="https://github.com/helt/mui-json-viewer/graphs/contributors"><img src="https://opencollective.com/json-viewer/contributors.svg?width=890&button=false" /></a>
+<a href="https://github.com/dataxpdtn/mui-json-viewer/graphs/contributors"><img src="https://opencollective.com/json-viewer/contributors.svg?width=890&button=false" /></a>
 
 ## Acknowledge
 

@@ -6,11 +6,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helt/mui-json-viewer.git"
+    "url": "git+https://github.com/dataxpdtn/mui-json-viewer.git"
   },
   "author": "github@dataexpedition.net",
-  "bugs": "https://github.com/helt/mui-json-viewer/issues",
-  "homepage": "https://github.com/helt/mui-json-viewer#readme",
+  "bugs": "https://github.com/dataxpdtn/mui-json-viewer/issues",
+  "homepage": "https://github.com/dataxpdtn/mui-json-viewer#readme",
   "keywords": [
     "react-18",
     "react",
@@ -48,7 +48,7 @@
     "dist"
   ],
   "scripts": {
-    "dev": "pnpm --filter \"@helt/mui-json-viewer-docs\" run dev",
+    "dev": "pnpm --filter \"@dataxpdtn/mui-json-viewer-docs\" run dev",
     "test": "vitest run",
     "test:watch": "vitest",
     "coverage": "vitest run --coverage",

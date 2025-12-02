@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 // const banner = <Banner storageKey="some-key">This template was created with 🩸 and 💦 by <Link href="https://github.com/phucbm">PHUCBM</Link> 🐧</Banner>
 const navbar = (
   <Navbar
-    projectLink='https://github.com/helt/mui-json-viewer'
+    projectLink='https://github.com/dataxpdtn/mui-json-viewer'
     logo={'@dataxpdtn/mui-json-viewer'}
   />
 )
@@ -52,7 +52,7 @@ export default async function RootLayout ({ children }) {
             // banner={banner}
           navbar={navbar}
           pageMap={pageMap}
-          docsRepositoryBase='https://github.com/helt/mui-json-viewer/tree/main'
+          docsRepositoryBase='https://github.com/dataxpdtn/mui-json-viewer/tree/main'
           footer={footer}
           search={<NextraSearchDialog pages={pages} />}
         >
