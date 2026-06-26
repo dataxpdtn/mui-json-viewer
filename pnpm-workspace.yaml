@@ -2,6 +2,11 @@ packages:
   - .
   - docs
 
+allowBuilds:
+  '@swc/core': true
+  esbuild: true
+  sharp: true
+
 onlyBuiltDependencies:
   - '@swc/core'
   - esbuild
