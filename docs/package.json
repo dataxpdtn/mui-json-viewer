@@ -8,10 +8,10 @@
     "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind"
   },
   "dependencies": {
+    "@dataxpdtn/mui-json-viewer": "workspace:^",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@dataxpdtn/mui-json-viewer": "workspace:^",
-    "@mui/material": "^7.3.5",
+    "@mui/material": "^9.1.2",
     "@radix-ui/react-dialog": "^1.1.15",
     "@tailwindcss/postcss": "^4.1.17",
     "clsx": "^2.1.1",

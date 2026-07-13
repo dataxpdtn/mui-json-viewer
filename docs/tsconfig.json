@@ -19,7 +19,6 @@
       }
     ],
     "module": "esnext",
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "@dataxpdtn/mui-json-viewer": ["../src/index"]
