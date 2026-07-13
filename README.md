@@ -24,9 +24,7 @@
 
 ## Installation
 
-`@dataxpdtn/mui-json-viewer` is using [Material-UI](https://mui.com/) as the base component library, so you need to install it and its peer dependencies first.
-
-Currently, MUI v9 is supported.
+`@dataxpdtn/mui-json-viewer` is using [Material-UI version 9](https://mui.com/) as the base component library, so you need to install it and its peer dependencies first.
 
 ```sh
 npm install @dataxpdtn/mui-json-viewer @mui/material @emotion/react @emotion/styled
@@ -39,7 +37,7 @@ npm install @dataxpdtn/mui-json-viewer @mui/material @emotion/react @emotion/sty
 <html lang="en">
   <body>
     <div id="json-viewer"></div>
-    <script src="https://cdn.jsdelivr.net/npm/@dataxpdtn/mui-json-viewer@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@dataxpdtn/mui-json-viewer@6"></script>
     <script>
       new JsonViewer({
         value: {
