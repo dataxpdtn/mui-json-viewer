@@ -34,7 +34,7 @@ importers:
         specifier: ^9.39.4
         version: 9.39.4
       '@mui/material':
-        specifier: ^9.0.1
+        specifier: ^9
         version: 9.1.2(@emotion/react@11.14.0(@types/react@19.2.17)(react@19.2.7))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@19.2.17)(react@19.2.7))(@types/react@19.2.17)(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@rollup/plugin-commonjs':
         specifier: ^29.0.3

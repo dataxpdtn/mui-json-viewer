@@ -11,8 +11,6 @@
 ~~Json Viewer?~~
 **ANY Data Viewer** ✅
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/textea-json-viewer-v4-b4wgxq-qzsnukyr?file=pages%2Findex.js)
-
 ## Features 🚀
 
 - 🦾 100% TypeScript
@@ -27,6 +25,8 @@
 ## Installation
 
 `@dataxpdtn/mui-json-viewer` is using [Material-UI](https://mui.com/) as the base component library, so you need to install it and its peer dependencies first.
+
+Currently, MUI v9 is supported.
 
 ```sh
 npm install @dataxpdtn/mui-json-viewer @mui/material @emotion/react @emotion/styled
