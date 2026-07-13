@@ -20,7 +20,7 @@
     "next": "^16.2.10",
     "nextra": "^4.6.1",
     "nextra-theme-docs": "^4.6.1",
-    "postcss": "^8.5.17",
+    "postcss": "^8.5.6",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "shiki": "^3.17.1",
