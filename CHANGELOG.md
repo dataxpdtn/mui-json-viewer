@@ -1,5 +1,29 @@
 # Changelog
 
+## [6.0.0](https://github.com/dataxpdtn/mui-json-viewer/compare/mui-json-viewer-v5.0.9...mui-json-viewer-v6.0.0) (2026-07-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* ensure mui v9 mentioned in relevant locations
+* Reduce user friction when updating this package without updating MUI to v9.
+
+### Features
+
+* ensure mui v9 mentioned in relevant locations ([3403016](https://github.com/dataxpdtn/mui-json-viewer/commit/3403016725587cf43e5b66225e43123e74364cea))
+
+
+### Bug Fixes
+
+* remove sponsoring from landing page ([dc66b96](https://github.com/dataxpdtn/mui-json-viewer/commit/dc66b96b1a40406d2d832b968c951cf864ecf8b4))
+* update documentation ([184cfb2](https://github.com/dataxpdtn/mui-json-viewer/commit/184cfb2039584be3b3ea3e54a4be8f3fbebe127a))
+* update react types to fix cmdk issue ([66d7e41](https://github.com/dataxpdtn/mui-json-viewer/commit/66d7e412c3d12f2ee2fe1ac23c93aa68812314d3))
+
+
+### Miscellaneous Chores
+
+* updated dependencies ([15f25bc](https://github.com/dataxpdtn/mui-json-viewer/commit/15f25bc578bf86ee9e13875b077ca60635a82a84))
+
 ## [5.0.9](https://github.com/dataxpdtn/mui-json-viewer/compare/mui-json-viewer-v5.0.8...mui-json-viewer-v5.0.9) (2025-12-02)
 
 
