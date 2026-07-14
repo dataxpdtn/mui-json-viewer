@@ -64,10 +64,6 @@
     "copy-to-clipboard": "^3.3.3",
     "zustand": "^5.0.14"
   },
-  "lint-staged": {
-    "!*.{ts,tsx,js,jsx}": "prettier --write --ignore-unknown",
-    "*.{ts,tsx,js,jsx}": "npx eslint --cache --fix"
-  },
   "peerDependencies": {
     "@emotion/react": "^11",
     "@emotion/styled": "^11",

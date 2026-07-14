@@ -48,7 +48,6 @@ jobs:
       - name: Clean package.json
         run: |
           pnpm pkg delete scripts
-          pnpm pkg delete lint-staged
 
       - name: Publish to npm
         run: pnpm publish --provenance --access public --no-git-checks
