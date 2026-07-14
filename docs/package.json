@@ -11,7 +11,7 @@
     "@dataxpdtn/mui-json-viewer": "workspace:^",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@mui/material": "^9.1.2",
+    "@mui/material": "^9.2.0",
     "@radix-ui/react-dialog": "^1.1.19",
     "@tailwindcss/postcss": "^4.3.2",
     "clsx": "^2.1.1",
