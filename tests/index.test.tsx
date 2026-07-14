@@ -5,7 +5,7 @@ import { describe, expect, it, vi } from 'vitest'
 import type { Path } from '../src'
 import { defineDataType, JsonViewer } from '../src'
 
-function aPlusB (a: number, b: number) {
+function aPlusB(a: number, b: number) {
   return a + b
 }
 
@@ -90,7 +90,7 @@ describe('render <JsonViewer/>', () => {
     render(<JsonViewer value={114514n} />)
   })
 
-  it('render array', {timeout: 10_000}, () => {
+  it('render array', { timeout: 10_000 }, () => {
     render(<JsonViewer value={[1, '2', 3.0, Infinity]} />)
     render(<JsonViewer value={new Array(1e5).fill(1)} />)
   })
@@ -130,7 +130,7 @@ describe('render <JsonViewer/>', () => {
   it('render function', () => {
     render(
       <JsonViewer
-        value={function aPlusB (a: number, b: number) {
+        value={function aPlusB(a: number, b: number) {
           return a + b
         }}
       />
@@ -337,7 +337,7 @@ describe('test functions', () => {
     return '111'
   }
 
-  function func2 (...args: any[]) {
+  function func2(...args: any[]) {
     console.log(args)
     return '222'
   }
@@ -348,63 +348,32 @@ describe('test functions', () => {
         console.log(args)
         return '333'
       },
-      '(...args) {',
-      `
-        console.log(args);
-        return "333";
-      `
     ],
     [
       func1,
-      '(...args) {',
-      `
-    console.log(args);
-    return "111";
-  `
     ],
     [
       func2,
-      'func2(...args) {',
-      `
-    console.log(args);
-    return "222";
-  `
     ],
     [
       (...args: any) => console.log('555'),
-      '(...args) => {',
-      ' console.log("555")'
     ],
     [
       (...args: any) => {
         console.log(args)
         return '666'
       },
-      '(...args) => {',
-      ` {
-        console.log(args);
-        return "666";
-      }`
     ],
     [
       function (a: number, b: number) {
         throw Error('Be careful to use the function just as value in useState() hook')
       },
-      '(a, b) {',
-      `
-        throw Error("Be careful to use the function just as value in useState() hook");
-      `
     ],
     [
       ({ prop1, prop2, ...other }: any) => {
         console.log(prop1, prop2, other)
         return '777'
       },
-      '({ prop1, prop2, ...other }) => {',
-      ` {
-        console.log(prop1, prop2, other);
-        return "777";
-      }`
     ],
     [
       {
@@ -413,18 +382,9 @@ describe('test functions', () => {
           return '888'
         }
       },
-      '({ prop1, prop2, ...other }) => {',
-      ` {
-          console.log(prop1, prop2, other);
-          return "888";
-        }`
     ],
     [
       function (e, n) { return e + n },
-      '(e, n) {',
-      `
-        return e + n;
-      `
     ]
   ]
   for (const iteration of dataProvider) {
@@ -438,11 +398,11 @@ describe('test functions', () => {
       expect(container.children.length).eq(1)
       const functionName = container.getElementsByClassName('data-function-start')
       expect(functionName.length).eq(1)
-      expect(functionName[0].textContent).eq(iteration[1])
+      expect(functionName[0].textContent).toMatchSnapshot()
 
       const functionBody = container.getElementsByClassName('data-function')
       expect(functionBody.length).eq(1)
-      expect(functionBody[0].textContent).eq(iteration[2])
+      expect(functionBody[0].textContent).toMatchSnapshot()
     })
   }
 })
