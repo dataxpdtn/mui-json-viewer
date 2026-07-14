@@ -1,5 +1,21 @@
 # Changelog
 
+## [6.0.0](https://github.com/dataxpdtn/mui-json-viewer/compare/mui-json-viewer-v5.0.9...mui-json-viewer-v6.0.0) (2026-07-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* update lib to mui 9
+
+### Bug Fixes
+
+* fix tests ([213caf5](https://github.com/dataxpdtn/mui-json-viewer/commit/213caf5471dfab1c7edd90f049d8b4b1fe7dfa81))
+
+
+### Miscellaneous Chores
+
+* update lib to mui 9 ([c0b746f](https://github.com/dataxpdtn/mui-json-viewer/commit/c0b746faf340794167f22778b39fdf9bba30f229))
+
 ## [5.0.9](https://github.com/dataxpdtn/mui-json-viewer/compare/mui-json-viewer-v5.0.8...mui-json-viewer-v5.0.9) (2025-12-02)
 
 
