@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.0.1](https://github.com/dataxpdtn/mui-json-viewer/compare/mui-json-viewer-v6.0.0...mui-json-viewer-v6.0.1) (2026-07-14)
+
+
+### Bug Fixes
+
+* update documentation ([91c761b](https://github.com/dataxpdtn/mui-json-viewer/commit/91c761bc92b966213e20c2aaec4ead30d3941b85))
+* update documentation ([69337fe](https://github.com/dataxpdtn/mui-json-viewer/commit/69337fe2daaec6d599177867fe1bbf34383def60))
+
 ## [6.0.0](https://github.com/dataxpdtn/mui-json-viewer/compare/mui-json-viewer-v5.0.9...mui-json-viewer-v6.0.0) (2026-07-14)
 
 
